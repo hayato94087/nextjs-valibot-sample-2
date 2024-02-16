@@ -1,15 +1,12 @@
-import { type FC } from "react";
+import ContactForm from "@/components/contact-form";
 
-const Home: FC = () => {
+export default function Home() {
   return (
-    <div className="">
-      <div className="text-lg font-bold">Home</div>
-      <div>
-        <span className="text-blue-500">Hello</span>
-        <span className="text-red-500">World</span>
+    <main className="container relative mx-auto">
+      <div className="mx-auto lg:w-[800px] py-10 px-10">
+        <h1 className="text-2xl font-bold text-center pb-10">お問い合わせ</h1>
+        <ContactForm />
       </div>
-    </div>
+    </main>
   );
-};
-
-export default Home;
+}
